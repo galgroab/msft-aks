@@ -8,6 +8,7 @@ This cluster is being bootstrapped by AKS Engine tool.
 - helm3 https://helm.sh/docs/intro/install/
 - kustomize https://kustomize.io/ (brew install kustomize)
 - coreutils (brew install coreutils)
+- netcat
 
 # Deployment
 Run ./deploy.sh
