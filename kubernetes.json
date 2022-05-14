@@ -1,0 +1,27 @@
+{
+  "apiVersion": "vlabs",
+  "properties": {
+    "masterProfile": {
+      "count": 1,
+      "dnsPrefix": "btc-info",
+      "vmSize": "Standard_D2_v5"
+    },
+    "agentPoolProfiles": [
+      {
+        "name": "agentpool1",
+        "count": 1,
+        "vmSize": "Standard_D2_v5"
+      }
+    ],
+    "linuxProfile": {
+      "adminUsername": "azureuser",
+      "ssh": {
+        "publicKeys": [
+          {
+            "keyData": ""
+          }
+        ]
+      }
+    }
+  }
+}
