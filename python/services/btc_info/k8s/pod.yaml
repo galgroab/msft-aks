@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: btc-info
+  labels:
+    app: btc-info
+spec:
+  restartPolicy: Never
+  volumes:
+  - name: shared-data
+    emptyDir: {}
+  containers:
+  - name: nginx-container
+    image: nginx
+    ports:
+    - containerPort: 80
+    volumeMounts:
+    - name: shared-data
+      mountPath: /usr/share/nginx/html
+
+  - name: python-container
+    image: docker.io/galgro123/python-btc
+    volumeMounts:
+    - name: shared-data
+      mountPath: /tmp
+    #command: ["python3", "html2.py"]
+    #args: ["-c", python"]

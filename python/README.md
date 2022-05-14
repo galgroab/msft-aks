@@ -10,3 +10,4 @@ This cluster is being bootstrapped by AKS Engine tool.
 
 # Deployment
 - deploy.sh
+  
