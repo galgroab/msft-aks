@@ -10,5 +10,5 @@ This cluster is being bootstrapped by AKS Engine tool.
 - coreutils (brew install coreutils)
 
 # Deployment
-- deploy.sh
+Run ./deploy.sh
   
