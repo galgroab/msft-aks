@@ -1,3 +1,5 @@
 resources:
   - btc_info
   - myapp
+  - myapp-networkpolicy.yaml
+  - btc-networkpolicy.yaml

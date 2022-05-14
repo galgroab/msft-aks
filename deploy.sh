@@ -8,6 +8,8 @@ aks-engine deploy  \
     --location westus2 \
     --api-model kubernetes.json
 
+echo "[INFO][deploy.sh] Sleeping 60s for cluster stabilization..."
+sleep 60
 # update kubeconfig
 echo "[INFO][deploy.sh] Updating Kubeconfig..."
 export KUBECONFIG=_output/btc-info/kubeconfig/kubeconfig.westus2.json
