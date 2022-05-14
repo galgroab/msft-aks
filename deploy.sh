@@ -41,7 +41,7 @@ while [ -z $external_ip ]; do
   "[INFO][deploy.sh] Waiting for Ingress external IP..."
   while ! nc -z btc-info.westus2.cloudapp.azure.com 443; do   
     echo "[WARN][deploy.sh] Waiting Cluster to listen on 443..."
-    sleep 5 # wait for 1/10 of the second before check again
+    sleep 5
   done
   echo "[INFO][deploy.sh] Success!"
   external_ip=$(kubectl get svc ingress-nginx-controller --output jsonpath='{.status.loadBalancer.ingress[0].ip}') 
